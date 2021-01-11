@@ -2,7 +2,7 @@
 
 ## Exercise 1: Quote a quote
 
-This exercise, creates a C++ program that prompts a user for create a C++ program that prompts the user for a quote and then for the author of the quote before displaying both to the author as below:
+This exercise, creates a C++ program that prompts a user for a quote and then for the author of the quote before displaying both to the author as below:
 
 What is the quote? The way to get started is to quit talking and begin doing.
 Who said it? Walt Disney
