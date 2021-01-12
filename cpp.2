@@ -1,0 +1,32 @@
+/*
+https://repl.it/join/lwjptalh-nicolagibson
+A C++ program that converts user inputs to farenheit or celsius and returns the result.
+Else condition required for selections other than C or F.
+*/
+
+#include <iostream>
+#include <string>
+
+int main() {
+  float temp;
+  std::string temp_type = "";
+  float temp_conversion_outcome = 0;
+
+  std::cout << "Please enter the starting temperature:\n";
+  std::cin >> temp;
+  std::cout << "Press 'C' or 'F'.";
+  std::cin >> temp_type;
+  if (temp_type == "C" || temp_type == "c"){
+    temp_type = "C";
+    temp_conversion_outcome = (temp - 32) * 5/9;
+  }
+  else if (temp_type == "F" || temp_type == "f"){
+    temp_type = "F";
+    temp_conversion_outcome = (temp * 9/5) + 32;  
+  } 
+  
+  std::cout << "Your choice: " << temp_type << "\n";
+  std::cout << temp << " degrees " << temp_type << " is " << temp_conversion_outcome << "\n"; 
+
+  return 0;
+}
